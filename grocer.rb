@@ -28,6 +28,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     coupon_item = coupon[:item]
     if cart.has_key?(coupon_item)
+      binding.pry
       if coupon[:num] <= cart[coupon_item][:count] && !cart.has_key?("#{coupon_item} W/ COUPON") # check for item and coupon count
 
         # coupon_item_price = coupon[:cost] / coupon[:num] # initialize new cost
@@ -48,8 +49,6 @@ def apply_coupons(cart, coupons)
     end
   end
 end
-
-# apply_coupons(cart1, coupon1)
 
 
 
