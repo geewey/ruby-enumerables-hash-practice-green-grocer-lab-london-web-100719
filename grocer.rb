@@ -58,10 +58,7 @@ def apply_clearance(cart)
       discount = 0.2
       discounted_price = original_price * (1.00 - discount)
       cart[item][:price] = discounted_price.round(2)
-      binding.pry
     end
-    
-  binding.pry
   end
   cart
 end
