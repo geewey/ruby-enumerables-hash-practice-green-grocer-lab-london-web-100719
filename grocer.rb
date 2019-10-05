@@ -1,4 +1,4 @@
-require "pry"
+ require "pry"
 
 def consolidate_cart(cart)
   consolidate = Hash.new # create hash, default value = nil
@@ -13,7 +13,7 @@ def consolidate_cart(cart)
         consolidate[item][:count] += 1 # increment
       end
       consolidate[item].merge!(attribute) # merge price, clearance
-    end
+    end            
   end
   
   return consolidate
