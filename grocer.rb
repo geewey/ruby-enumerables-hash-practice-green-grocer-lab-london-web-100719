@@ -70,7 +70,7 @@ def checkout(cart, coupons)
   binding.pry
   discount_cart = apply_coupons(current_cart, coupons)
   binding.pry
-  discounted_cart = apply_clearance(current_cart)
+  clearance_cart = apply_clearance(current_cart)
   
   total
 end
