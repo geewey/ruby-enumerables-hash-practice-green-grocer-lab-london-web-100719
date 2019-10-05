@@ -30,9 +30,9 @@ def apply_coupons(cart, coupons)
     if cart.has_key?(coupon_item)
       if coupon[:num] <= cart[coupon_item][:count] && !cart.has_key?("#{coupon_item} W/ COUPON") # check for item and coupon count
 
-        coupon_item_price = coupon[:cost] / coupon[:num] # initialize new cost
-        coupon_item_clearance = cart[coupon_item][:clearance]
-        coupon_item_count = coupon[:num]
+        # coupon_item_price = coupon[:cost] / coupon[:num] # initialize new cost
+        # coupon_item_clearance = cart[coupon_item][:clearance]
+        # coupon_item_count = coupon[:num]
       
         cart["#{coupon_item} W/ COUPON"] = {:price => coupon_item_price, :clearance => coupon_item_clearance, :count => coupon_item_count}
       
