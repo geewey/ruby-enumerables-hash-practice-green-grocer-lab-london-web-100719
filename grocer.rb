@@ -67,12 +67,6 @@ def checkout(cart, coupons)
   total = 0
   
   current_cart = consolidate_cart(cart)
-
-  # current_cart.each do |item, attribute|
-  #   count = current_cart[item][:count]
-  #   price = clearance_cart[item][:price]
-  #   total += count * price
-  # end
   
   discount_cart = apply_coupons(current_cart, coupons)
   
