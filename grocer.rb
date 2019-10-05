@@ -53,6 +53,8 @@ end
 
 def apply_clearance(cart)
   cart.each do |item, attribute|
+    if attribute[:clearance] == true
+      cart[]
   
   binding.pry
   end
